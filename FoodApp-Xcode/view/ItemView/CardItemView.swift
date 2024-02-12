@@ -48,7 +48,7 @@ struct CardView: View {
                     Spacer()
                     
                     Image(systemName: "plus.circle.fill")
-                        .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686)/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                 }
                 .padding([.leading, .trailing])
                 

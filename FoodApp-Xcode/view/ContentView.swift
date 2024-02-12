@@ -9,33 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            TabView() {
-                HomeView()
-                    .tabItem {
-                        Image("HomeTabView")
-                    }
-                
-                HeartView()
-                    .tabItem {
-                        Image("HeartTabView")
-                    }
-                
-                FilterView()
-                    .tabItem {
-                        Image("FilterTabView")
-                    }
-                
-                BabyView()
-                    .tabItem {
-                        Image("BabyTabView")
-                    }
-                    
-            }
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+                .tag(0)
             
+            HeartView()
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                }
+                .tag(1)
+            
+            FilterView()
+                .tabItem {
+                    Image(systemName: "camera.filters")
+                }
+                .tag(2)
+            
+            BabyView()
+                .tabItem {
+                    Image(systemName: "figure.child.circle")
+                }
+                .tag(3)
         }
+        .tint(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
+        
     }
+}
 
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
