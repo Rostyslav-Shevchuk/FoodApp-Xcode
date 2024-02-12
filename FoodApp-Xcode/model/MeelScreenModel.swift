@@ -19,9 +19,9 @@ struct MeelScreenModel: Identifiable {
     let delivTime: String
     
     static let MealScreen = [
-        MeelScreenModel(title: "Vegan Salat", Image: "VeganSalat", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
-        MeelScreenModel(title: "VVVVVVV", Image: "VeganSalat", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
-        MeelScreenModel(title: "HHHHH", Image: "VeganSalat", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
-        MeelScreenModel(title: "Vegan Salat", Image: "VeganSalat", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes")
+        MeelScreenModel(title: "Vegan Salat", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
+        MeelScreenModel(title: "VVVVVVV", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
+        MeelScreenModel(title: "HHHHH", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"),
+        MeelScreenModel(title: "Vegan Salat", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes")
     ]
 }

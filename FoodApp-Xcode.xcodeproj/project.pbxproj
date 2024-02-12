@@ -20,6 +20,7 @@
 		6268E1A02B78FF1800D0888F /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268E19F2B78FF1800D0888F /* CardItemView.swift */; };
 		62B2ED922B7AAA8600B317C2 /* MealScreenItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2ED912B7AAA8600B317C2 /* MealScreenItemView.swift */; };
 		62B2ED942B7AAA9700B317C2 /* MeelScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2ED932B7AAA9700B317C2 /* MeelScreenModel.swift */; };
+		62F296EB2B7AD33600CB34F6 /* CardInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F296EA2B7AD33600CB34F6 /* CardInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6268E19F2B78FF1800D0888F /* CardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemView.swift; sourceTree = "<group>"; };
 		62B2ED912B7AAA8600B317C2 /* MealScreenItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScreenItemView.swift; sourceTree = "<group>"; };
 		62B2ED932B7AAA9700B317C2 /* MeelScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeelScreenModel.swift; sourceTree = "<group>"; };
+		62F296EA2B7AD33600CB34F6 /* CardInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				6268E19F2B78FF1800D0888F /* CardItemView.swift */,
 				62B2ED912B7AAA8600B317C2 /* MealScreenItemView.swift */,
+				62F296EA2B7AD33600CB34F6 /* CardInView.swift */,
 			);
 			path = ItemView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				6268E1A02B78FF1800D0888F /* CardItemView.swift in Sources */,
 				62244BE82B7A0FD8000F7B1A /* HomeView.swift in Sources */,
 				62B2ED942B7AAA9700B317C2 /* MeelScreenModel.swift in Sources */,
+				62F296EB2B7AD33600CB34F6 /* CardInView.swift in Sources */,
 				624C6F692B78DCE700CBE4DF /* ContentView.swift in Sources */,
 				62244BE62B7A06F4000F7B1A /* HeartView.swift in Sources */,
 				62244BEA2B7A1269000F7B1A /* FilterView.swift in Sources */,

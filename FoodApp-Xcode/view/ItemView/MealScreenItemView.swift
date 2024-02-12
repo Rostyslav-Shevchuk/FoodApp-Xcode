@@ -13,23 +13,45 @@ struct MealScreenItemView: View {
     
     var body: some View {
         VStack {
+            Image(tem.Image)
+                .ignoresSafeArea()
+            
+            Spacer()
+            
             HStack {
                 Text(tem.title)
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.circle.fill")
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686)/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                     .padding(.leading, 10)
                 Spacer()
             }
             .padding(.leading, 50)
+            .padding(.bottom, 5)
             
             Text(tem.price)
+                .font(.system(size: 18, weight: .semibold, design: .default))
+                .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
+                .padding(.leading, -145)
+                .padding(.bottom, 15)
             
             VStack {
                 Text("Recipe")
+                    .foregroundColor(.black.opacity(0.7))
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.leading, -145)
                 
                 Text(tem.description)
+                    .font(.headline)
+                    .fontWeight(.medium)
+                    .foregroundColor(.black.opacity(0.55))
+                    .padding(.leading, 35)
             }
+            .padding(.bottom, 10)
             
             VStack {
                 HStack {
@@ -37,25 +59,43 @@ struct MealScreenItemView: View {
                     
                     VStack{
                         Text("Location")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black.opacity(0.7))
                         
                         Text(tem.location)
+                            .font(.caption)
+                            .fontWeight(.medium)
+                            .foregroundColor(.black.opacity(0.55))
                     }
                 }
+                .padding(.leading, -145)
+                .padding(.bottom, 30)
                 
                 HStack {
                     Image("TimeIcon")
                     
                     VStack{
                         Text("Delivery Time")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black.opacity(0.7))
                         
                         Text(tem.delivTime)
+                            .font(.caption)
+                            .fontWeight(.medium)
+                            .foregroundColor(.black.opacity(0.55))
                     }
                 }
+                .padding(.leading, -95)
             }
+            
+            Spacer()
+            
         }
     }
 }
 
 #Preview {
-    MealScreenItemView(tem: MeelScreenModel(title: "Vegan Salat", Image: "VeganSalat", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"))
+    MealScreenItemView(tem: MeelScreenModel(title: "Vegan Salat", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"))
 }

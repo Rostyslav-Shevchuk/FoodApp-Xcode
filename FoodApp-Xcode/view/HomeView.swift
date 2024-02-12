@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    @State private var columns = [
-        GridItem(.flexible(), spacing: 0),
-        GridItem(.flexible(), spacing: 0)
-    ]
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -38,12 +32,11 @@ struct HomeView: View {
                 Spacer()
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    LazyVGrid (columns: columns, spacing: 30) {
-                        ForEach(cardModel.card) { item in
-                            CardView(item: item)
-                        }
+                    NavigationLink {
+                        
+                    }label: {
+                        
                     }
-                    
                 }
                 .frame(height: 480)
                 
