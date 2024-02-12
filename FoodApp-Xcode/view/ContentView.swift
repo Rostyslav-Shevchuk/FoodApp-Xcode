@@ -27,35 +27,11 @@ struct ContentView: View {
                 
             }
             
+            Spacer()
+            
             VStack {
                 Text("Work Place")
                 Text("choose your delicious meal")
-            }
-            
-            HStack {
-                Button {
-                    
-                }label: {
-                    Image("")
-                }
-                
-                Button {
-                    
-                }label: {
-                    Image("")
-                }
-                
-                Button {
-                    
-                }label: {
-                    Image("")
-                }
-                
-                Button {
-                    
-                }label: {
-                    Image("")
-                }
             }
             
             Spacer()
