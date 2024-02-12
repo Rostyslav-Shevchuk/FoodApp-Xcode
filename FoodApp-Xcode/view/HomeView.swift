@@ -47,6 +47,7 @@ struct HomeView: View {
             
             Spacer()
         }
+        .background(.gray.opacity(0.10))
     }
 }
 
