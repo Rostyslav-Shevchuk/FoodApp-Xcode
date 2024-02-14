@@ -13,50 +13,46 @@ struct CardItemView: View {
     
     var body: some View {
         ZStack {
-            VStack {
-                
-                Spacer()
-                
-                HStack {
-                    Image(systemName: "circle.circle.fill")
-                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
-                    
-                    Spacer()
-                    
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
-                }
-                .padding([.leading, .trailing])
-                
+            HStack {
                 Spacer()
                 
                 Image(cards.Image)
                 
                 Spacer()
                 
-                Text(cards.title)
-                    .font(.system(size: 12, weight: .semibold, design: .default))
-                    .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.0))
-                    .padding(.leading, -55)
-                
-                
-                HStack {
-                    Text(cards.price)
-                        .font(.system(size: 18, weight: .semibold, design: .default))
+                VStack {
+                    Spacer()
+                    
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                    
+                    Spacer(minLength: 80)
+                    
+                    Image(systemName: "circle.circle.fill")
                         .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                     
                     Spacer()
-                    
-                    Image(systemName: "plus.circle.fill")
-                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                 }
-                .padding([.leading, .trailing])
                 
                 Spacer()
                 
+                VStack {
+                    Text(cards.title)
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black.opacity(0.65))
+                        
+                    
+                    Text(cards.price)
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
+                }
+                
+                Spacer()
             }
         }
-        .frame(width: 200, height: 150)
+        .frame(width: 280, height: 140)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 15.0, style: .continuous))
     }

@@ -14,8 +14,8 @@
         "price": "$ 15.00",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "location": "Berlin",
-        "DelivTime": "5 minutes",
-        "ImageMealScreen": "MealScreenVeganSalad"
+        "DelivTime": "40 minutes",
+        "ImageMealScreen": "MealScreenChicken"
     },
     {
         "title": "Rice & Stew",
@@ -23,8 +23,8 @@
         "price": "$ 20.00",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "location": "Berlin",
-        "DelivTime": "5 minutes",
-        "ImageMealScreen": "MealScreenVeganSalad"
+        "DelivTime": "20 minutes",
+        "ImageMealScreen": "MealScreenRiceStew"
     },
     {
         "title": "Steak",
@@ -32,7 +32,7 @@
         "price": "$ 30.00",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "location": "Berlin",
-        "DelivTime": "5 minutes",
-        "ImageMealScreen": "MealScreenVeganSalad"
+        "DelivTime": "25 minutes",
+        "ImageMealScreen": "MealScreenSteak"
     }
 ]

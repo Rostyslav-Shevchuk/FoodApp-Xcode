@@ -43,8 +43,8 @@ struct HomeView: View {
                             CardItemView(cards: card)
                         }
                     }
-                    .padding(.leading, 50)
                 }
+                .padding(.leading, 175)
             }
             .background(Color.gray.opacity(0.10))
         }
