@@ -11,8 +11,6 @@ struct HomeView: View {
     
     @State private var cardi: [card] = card.allcard
     
-    @State private var columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 4)
-    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -38,13 +36,13 @@ struct HomeView: View {
                 }
                 
                 ForEach(cardi, id: \.title) { card in
-                    LazyVGrid (columns: columns){
+                    LazyVGrid (columns: [GridItem(.flexible(), spacing: 4), GridItem(.flexible(), spacing: 4)], spacing: 4){
                         NavigationLink(destination: MealScreenItemView(cards: card)) {
                             CardItemView(cards: card)
                         }
                     }
                 }
-                .padding(.leading, 175)
+                .padding(.leading, 130)
             }
             .background(Color.gray.opacity(0.10))
         }
