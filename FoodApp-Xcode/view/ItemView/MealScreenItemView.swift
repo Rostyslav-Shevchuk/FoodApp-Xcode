@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct MealScreenItemView: View {
-    
-    var tem: MeelScreenModel
-    
     var body: some View {
         VStack {
-            Image(tem.Image)
+            Image("Vegan Salad")
                 .ignoresSafeArea()
             
             Spacer()
             
             HStack {
-                Text(tem.title)
+                Text("das")
                     .font(.title)
                     .fontWeight(.medium)
                     .foregroundColor(.black.opacity(0.7))
@@ -32,7 +29,7 @@ struct MealScreenItemView: View {
             .padding(.leading, 50)
             .padding(.bottom, 5)
             
-            Text(tem.price)
+            Text("dsaf")
                 .font(.system(size: 18, weight: .semibold, design: .default))
                 .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                 .padding(.leading, -145)
@@ -45,7 +42,7 @@ struct MealScreenItemView: View {
                     .fontWeight(.semibold)
                     .padding(.leading, -145)
                 
-                Text(tem.description)
+                Text("adfs")
                     .font(.headline)
                     .fontWeight(.medium)
                     .foregroundColor(.black.opacity(0.55))
@@ -63,7 +60,7 @@ struct MealScreenItemView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.black.opacity(0.7))
                         
-                        Text(tem.location)
+                        Text("adfdsa")
                             .font(.caption)
                             .fontWeight(.medium)
                             .foregroundColor(.black.opacity(0.55))
@@ -81,7 +78,7 @@ struct MealScreenItemView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.black.opacity(0.7))
                         
-                        Text(tem.delivTime)
+                        Text("adfsdfs")
                             .font(.caption)
                             .fontWeight(.medium)
                             .foregroundColor(.black.opacity(0.55))
@@ -97,5 +94,5 @@ struct MealScreenItemView: View {
 }
 
 #Preview {
-    MealScreenItemView(tem: MeelScreenModel(title: "Vegan Salat", Image: "MealVegSalad", price: "$ 10.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "Berlin", delivTime: "5 minutes"))
+    MealScreenItemView()
 }

@@ -8,45 +8,51 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var cardi: [card] = card.allcard
+    
+    @State private var columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 4)
+    
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    Menu() {
-                        /*@START_MENU_TOKEN@*/Text("Menu Item 1")/*@END_MENU_TOKEN@*/
-                        /*@START_MENU_TOKEN@*/Text("Menu Item 2")/*@END_MENU_TOKEN@*/
-                        /*@START_MENU_TOKEN@*/Text("Menu Item 3")/*@END_MENU_TOKEN@*/
-                    }label: {
-                        Image(systemName: "line.3.horizontal")
+            ScrollView {
+                VStack {
+                    HStack {
+                        Menu {
+                            Text("Menu Item 1")
+                            Text("Menu Item 2")
+                            Text("Menu Item 3")
+                        } label: {
+                            Image(systemName: "line.3.horizontal")
+                        }
                     }
                     
-                }
-                
-                Spacer()
-                
-                VStack {
-                    Text("Work Place")
-                    Text("choose your delicious meal")
-                }
-                
-                Spacer()
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    NavigationLink {
-                        
-                    }label: {
-                        
+                    Spacer()
+                    
+                    VStack {
+                        Text("Work Place")
+                        Text("choose your delicious meal")
                     }
+                    
+                    Spacer()
                 }
-                .frame(height: 480)
                 
-                Spacer()
+                ForEach(cardi, id: \.title) { card in
+                    LazyVGrid (columns: columns){
+                        NavigationLink(destination: MealScreenItemView()) {
+                            CardItemView(cards: card)
+                        }
+                    }
+                    .padding(.leading, 50)
+                }
             }
-            .background(.gray.opacity(0.10))
+            .background(Color.gray.opacity(0.10))
         }
     }
 }
 
-#Preview {
-    HomeView()
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
 }

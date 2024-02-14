@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardItemView: View {
     
-    var item: cardModel
+    var cards: card
     
     var body: some View {
         ZStack {
@@ -19,7 +19,7 @@ struct CardView: View {
                 
                 HStack {
                     Image(systemName: "circle.circle.fill")
-                        .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686)/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                     
                     Spacer()
                     
@@ -30,18 +30,18 @@ struct CardView: View {
                 
                 Spacer()
                 
-                Image(item.Image)
+                Image(cards.Image)
                 
                 Spacer()
                 
-                Text(item.title)
+                Text(cards.title)
                     .font(.system(size: 12, weight: .semibold, design: .default))
                     .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.0))
                     .padding(.leading, -55)
                 
                 
                 HStack {
-                    Text("$ 10.00")
+                    Text(cards.price)
                         .font(.system(size: 18, weight: .semibold, design: .default))
                         .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                     
@@ -63,5 +63,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(item: cardModel(title: "Vegan Salat", Image: "VeganSalat", price: "$ 10.00"))
+    CardItemView(cards: card.samplecard)
 }
