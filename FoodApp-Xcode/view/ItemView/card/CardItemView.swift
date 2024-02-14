@@ -56,7 +56,7 @@ struct CardItemView: View {
                 
             }
         }
-        .frame(width: 148, height: 226)
+        .frame(width: 200, height: 150)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 15.0, style: .continuous))
     }

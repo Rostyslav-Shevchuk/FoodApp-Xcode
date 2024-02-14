@@ -39,7 +39,7 @@ struct HomeView: View {
                 
                 ForEach(cardi, id: \.title) { card in
                     LazyVGrid (columns: columns){
-                        NavigationLink(destination: MealScreenItemView()) {
+                        NavigationLink(destination: MealScreenItemView(cards: card)) {
                             CardItemView(cards: card)
                         }
                     }

@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct MealScreenItemView: View {
+    
+    var cards: card
+    
     var body: some View {
         VStack {
-            Image("Vegan Salad")
-                .ignoresSafeArea()
-            
-            Spacer()
+            Image(cards.ImageMealScreen)
             
             HStack {
-                Text("das")
+                Text(cards.title)
                     .font(.title)
                     .fontWeight(.medium)
                     .foregroundColor(.black.opacity(0.7))
@@ -29,7 +29,7 @@ struct MealScreenItemView: View {
             .padding(.leading, 50)
             .padding(.bottom, 5)
             
-            Text("dsaf")
+            Text(cards.price)
                 .font(.system(size: 18, weight: .semibold, design: .default))
                 .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                 .padding(.leading, -145)
@@ -42,7 +42,7 @@ struct MealScreenItemView: View {
                     .fontWeight(.semibold)
                     .padding(.leading, -145)
                 
-                Text("adfs")
+                Text(cards.description)
                     .font(.headline)
                     .fontWeight(.medium)
                     .foregroundColor(.black.opacity(0.55))
@@ -60,10 +60,11 @@ struct MealScreenItemView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.black.opacity(0.7))
                         
-                        Text("adfdsa")
+                        Text(cards.location)
                             .font(.caption)
                             .fontWeight(.medium)
                             .foregroundColor(.black.opacity(0.55))
+                            .padding(.leading, -40)
                     }
                 }
                 .padding(.leading, -145)
@@ -78,10 +79,11 @@ struct MealScreenItemView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.black.opacity(0.7))
                         
-                        Text("adfsdfs")
+                        Text(cards.DelivTime)
                             .font(.caption)
                             .fontWeight(.medium)
                             .foregroundColor(.black.opacity(0.55))
+                            .padding(.leading, -65)
                     }
                 }
                 .padding(.leading, -95)
@@ -94,5 +96,5 @@ struct MealScreenItemView: View {
 }
 
 #Preview {
-    MealScreenItemView()
+    MealScreenItemView(cards: card.samplecard)
 }

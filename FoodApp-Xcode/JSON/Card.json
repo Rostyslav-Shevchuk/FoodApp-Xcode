@@ -2,21 +2,37 @@
     {
         "title": "Vegan Salat",
         "Image": "VeganSalat",
-        "price": "$ 10.00"
+        "price": "$ 10.00",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "location": "Berlin",
+        "DelivTime": "5 minutes",
+        "ImageMealScreen": "MealScreenVeganSalad"
     },
     {
         "title": "Roasted chicken",
         "Image": "Chicken",
-        "price": "$ 15.00"
+        "price": "$ 15.00",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "location": "Berlin",
+        "DelivTime": "5 minutes",
+        "ImageMealScreen": "MealScreenVeganSalad"
     },
     {
         "title": "Rice & Stew",
         "Image": "Rice & Stew",
-        "price": "$ 20.00"
+        "price": "$ 20.00",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "location": "Berlin",
+        "DelivTime": "5 minutes",
+        "ImageMealScreen": "MealScreenVeganSalad"
     },
     {
         "title": "Steak",
         "Image": "Steak",
-        "price": "$ 30.00"
+        "price": "$ 30.00",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "location": "Berlin",
+        "DelivTime": "5 minutes",
+        "ImageMealScreen": "MealScreenVeganSalad"
     }
 ]

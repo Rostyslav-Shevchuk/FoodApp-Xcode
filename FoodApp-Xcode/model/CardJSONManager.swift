@@ -12,6 +12,10 @@ struct card: Codable {
     var title: String
     var Image: String
     var price: String
+    var description: String
+    var location: String
+    var DelivTime: String
+    var ImageMealScreen: String
     
     static let allcard: [card] = Bundle.main.decode(file: "Card.json")
     static let samplecard: card = allcard[0]
