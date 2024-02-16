@@ -13,17 +13,19 @@ struct MealScreenItemView: View {
     
     var body: some View {
         VStack {
+            ScrollView {
             Image(cards.ImageMealScreen)
             
             HStack {
                 Text(cards.title)
                     .font(.title)
                     .fontWeight(.medium)
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(Color(.text))
                 
                 Image(systemName: "circle.circle.fill")
                     .foregroundColor(Color(red: 0.24705882352941178, green: 0.788235294117647, blue: 0.4745098039215686))
                     .padding(.leading, 10)
+                
                 Spacer()
             }
             .padding(.leading, 50)
@@ -37,7 +39,7 @@ struct MealScreenItemView: View {
             
             VStack {
                 Text("Recipe")
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(Color(.text))
                     .font(.title2)
                     .fontWeight(.semibold)
                     .padding(.leading, -145)
@@ -45,48 +47,49 @@ struct MealScreenItemView: View {
                 Text(cards.description)
                     .font(.headline)
                     .fontWeight(.medium)
-                    .foregroundColor(.black.opacity(0.55))
+                    .foregroundColor(Color(.text))
                     .padding(.leading, 35)
             }
             .padding(.bottom, 10)
             
-            VStack {
-                HStack {
-                    Image("locationIcon")
-                    
-                    VStack{
-                        Text("Location")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.black.opacity(0.7))
+                VStack {
+                    HStack {
+                        Image("locationIcon")
                         
-                        Text(cards.location)
-                            .font(.caption)
-                            .fontWeight(.medium)
-                            .foregroundColor(.black.opacity(0.55))
-                            .padding(.leading, -40)
+                        VStack{
+                            Text("Location")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(.text))
+                            
+                            Text(cards.location)
+                                .font(.caption)
+                                .fontWeight(.medium)
+                                .foregroundColor(Color(.text))
+                                .padding(.leading, -40)
+                        }
                     }
-                }
-                .padding(.leading, -145)
-                .padding(.bottom, 30)
-                
-                HStack {
-                    Image("TimeIcon")
+                    .padding(.leading, -145)
+                    .padding(.bottom, 30)
                     
-                    VStack{
-                        Text("Delivery Time")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.black.opacity(0.7))
+                    HStack {
+                        Image("TimeIcon")
                         
-                        Text(cards.DelivTime)
-                            .font(.caption)
-                            .fontWeight(.medium)
-                            .foregroundColor(.black.opacity(0.55))
-                            .padding(.leading, -65)
+                        VStack{
+                            Text("Delivery Time")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(.text))
+                            
+                            Text(cards.DelivTime)
+                                .font(.caption)
+                                .fontWeight(.medium)
+                                .foregroundColor(Color(.text))
+                                .padding(.leading, -65)
+                        }
                     }
+                    .padding(.leading, -95)
                 }
-                .padding(.leading, -95)
             }
             
             Spacer()

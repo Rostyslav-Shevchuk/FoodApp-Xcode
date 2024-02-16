@@ -23,7 +23,7 @@ struct CardItemView: View {
                 VStack {
                     Spacer()
                     
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "heart")
                         .foregroundColor(.red)
                     
                     Spacer(minLength: 80)
@@ -40,7 +40,7 @@ struct CardItemView: View {
                     Text(cards.title)
                         .font(.callout)
                         .fontWeight(.semibold)
-                        .foregroundColor(.black.opacity(0.65))
+                        .foregroundColor(Color(.text))
                         
                     
                     Text(cards.price)
@@ -53,7 +53,7 @@ struct CardItemView: View {
             }
         }
         .frame(width: 280, height: 140)
-        .background(.white)
+        .background(Color(.cardBack))
         .clipShape(RoundedRectangle(cornerRadius: 15.0, style: .continuous))
     }
 }

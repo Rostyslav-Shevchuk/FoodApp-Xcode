@@ -9,6 +9,7 @@ import Foundation
 
 
 struct card: Codable {
+    
     var title: String
     var Image: String
     var price: String

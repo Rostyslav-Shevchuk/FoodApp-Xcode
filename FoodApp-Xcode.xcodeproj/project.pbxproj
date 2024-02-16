@@ -30,7 +30,7 @@
 		62244BEB2B7A12F4000F7B1A /* BabyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyView.swift; sourceTree = "<group>"; };
 		623CB4622B7C121100EEF539 /* Card.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Card.json; sourceTree = "<group>"; };
 		623CB4672B7C1B1200EEF539 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		624C6F632B78DCE700CBE4DF /* FoodApp-Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodApp-Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624C6F632B78DCE700CBE4DF /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624C6F662B78DCE700CBE4DF /* FoodApp_XcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodApp_XcodeApp.swift; sourceTree = "<group>"; };
 		624C6F682B78DCE700CBE4DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		624C6F6A2B78DCEA00CBE4DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		624C6F642B78DCE700CBE4DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				624C6F632B78DCE700CBE4DF /* FoodApp-Xcode.app */,
+				624C6F632B78DCE700CBE4DF /* FoodApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		624C6F622B78DCE700CBE4DF /* FoodApp-Xcode */ = {
+		624C6F622B78DCE700CBE4DF /* FoodApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 624C6F712B78DCEA00CBE4DF /* Build configuration list for PBXNativeTarget "FoodApp-Xcode" */;
+			buildConfigurationList = 624C6F712B78DCEA00CBE4DF /* Build configuration list for PBXNativeTarget "FoodApp" */;
 			buildPhases = (
 				624C6F5F2B78DCE700CBE4DF /* Sources */,
 				624C6F602B78DCE700CBE4DF /* Frameworks */,
@@ -160,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = "FoodApp-Xcode";
+			name = FoodApp;
 			productName = "FoodApp-Xcode";
-			productReference = 624C6F632B78DCE700CBE4DF /* FoodApp-Xcode.app */;
+			productReference = 624C6F632B78DCE700CBE4DF /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				624C6F622B78DCE700CBE4DF /* FoodApp-Xcode */,
+				624C6F622B78DCE700CBE4DF /* FoodApp */,
 			);
 		};
 /* End PBXProject section */
@@ -360,8 +360,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodApp-Xcode/Preview Content\"";
+				DEVELOPMENT_TEAM = 33X48M5MCF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,8 +390,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodApp-Xcode/Preview Content\"";
+				DEVELOPMENT_TEAM = 33X48M5MCF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		624C6F712B78DCEA00CBE4DF /* Build configuration list for PBXNativeTarget "FoodApp-Xcode" */ = {
+		624C6F712B78DCEA00CBE4DF /* Build configuration list for PBXNativeTarget "FoodApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				624C6F722B78DCEA00CBE4DF /* Debug */,
