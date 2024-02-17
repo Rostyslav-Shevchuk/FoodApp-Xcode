@@ -16,21 +16,9 @@ struct ContentView: View {
                 }
                 .tag(0)
             
-            HeartView()
+            settingsView()
                 .tabItem {
-                    Image(systemName: "heart.fill")
-                }
-                .tag(1)
-            
-            FilterView()
-                .tabItem {
-                    Image(systemName: "camera.filters")
-                }
-                .tag(2)
-            
-            BabyView()
-                .tabItem {
-                    Image(systemName: "figure.child.circle")
+                    Image(systemName: "gearshape.fill")
                 }
                 .tag(3)
         }
