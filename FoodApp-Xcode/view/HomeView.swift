@@ -14,35 +14,33 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                Spacer(minLength: 30)
                 VStack {
-                    HStack {
-                        Menu {
-                            Text("Menu Item 1")
-                            Text("Menu Item 2")
-                            Text("Menu Item 3")
-                        } label: {
-                            Image(systemName: "line.3.horizontal")
-                        }
-                    }
-                    
-                    Spacer()
-                    
                     VStack {
                         Text("Work Place")
-                        Text("choose your delicious meal")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.text)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 30)
+                        
+                        Text("Choose your delicious meal")
+                            .font(.body)
+                            .fontWeight(.medium)
+                            .foregroundColor(.text)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 30)
                     }
-                    
-                    Spacer()
                 }
                 
-                ForEach(cardi, id: \.title) { card in
-                    LazyVGrid (columns: [GridItem(.flexible(), spacing: 4), GridItem(.flexible(), spacing: 4)], spacing: 4){
+                
+                    LazyVGrid (columns: [GridItem(.flexible(), spacing: -40), GridItem(.flexible(), spacing: -40)], spacing: 30){
+                        ForEach(cardi, id: \.title) { card in
                         NavigationLink(destination: MealScreenItemView(cards: card)) {
                             CardItemView(cards: card)
                         }
                     }
                 }
-                .padding(.leading, 130)
             }
             .background(Color.gray.opacity(0.10))
         }
