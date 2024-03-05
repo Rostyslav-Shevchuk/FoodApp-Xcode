@@ -12,6 +12,13 @@ struct ThemeChange: View {
     @AppStorage("user_theme") private var userTheme: Theme = .sustemDefault
     
     @Namespace private var animation
+    
+    @State private var circleOffset: CGSize
+    init (scheme: ColorScheme) {
+        self.scheme = scheme
+        let isDark = scheme == .dark
+        self._circleOffset = .init(initialValue: CGSize(width: isDark ? 30 : 150, height: isDark ? -25 : 150))
+    }
     var body: some View {
         VStack (spacing: 15) {
             VStack(spacing: 15) {
@@ -19,6 +26,14 @@ struct ThemeChange: View {
                 Circle()
                     .fill(userTheme.color(scheme).gradient)
                     .frame (width: 150, height: 150)
+                    .mask {
+                        Rectangle()
+                            .overlay {
+                                Circle()
+                                    .offset(circleOffset)
+                                    .blendMode(.destinationOut)
+                            }
+                    }
                 
                 Text ("Choose a Style")
                     .font(.title2.bold())
@@ -59,6 +74,12 @@ struct ThemeChange: View {
         .frame(height: 410)
         .clipShape(.rect(cornerRadius: 30))
         .environment(\.colorScheme, scheme)
+        .onChange(of: scheme, initial: false) { _, newValue in
+            let isDark = newValue == .dark
+            withAnimation(.bouncy) {
+                circleOffset = CGSize(width: isDark ? 30 : 150, height: isDark ? -25 : 150)
+            }
+        }
         
     }
 }
